@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(248 250 252);
+  color: rgb(15 23 42);
+}
+
+.dark body {
+  background-color: rgb(15 23 42);
+  color: rgb(248 250 252);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(248 250 252);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgb(15 23 42);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: linear-gradient(180deg, rgb(129 140 248), rgb(248 250 252));
+}
+
+.glass-panel {
+  background: radial-gradient(circle at top, rgba(148, 163, 184, 0.2), transparent),
+    rgba(248, 250, 252, 0.92);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(18px);
+}
+
+.dark .glass-panel {
+  background: radial-gradient(circle at top, rgba(148, 163, 184, 0.4), transparent),
+    rgba(15, 23, 42, 0.9);
+  border-color: rgba(148, 163, 184, 0.4);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.75);
+}
+
+.badge-pill {
+  border-radius: 9999px;
+  padding: 0.15rem 0.75rem;
+}
+
+.login-panel {
+  background: radial-gradient(circle at top, rgba(148, 163, 184, 0.4), transparent),
+    rgba(15, 23, 42, 0.9);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.75);
+}
